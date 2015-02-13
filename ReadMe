@@ -1,0 +1,33 @@
+Welcome to the ArduinoConnectServer ReadMe file
+Version 1.6
+
+08/22/2013
+Initial Public Release
+
+This is the ArduinoConnectServer designed for the RasPiConnect and ArduinoConnect App available on the Apple AppStore
+
+For complete documentation, see www.milocreek.com
+
+----------
+Be sure to back up your Config.h file BEFORE downloading a new version!!!!!
+----------
+Note:  This program is designed for you to supply your own functions in a file called Local.h
+The program uses LocalExample.h included in ArduinoConnectServer.h
+
+If you change LocalExample.h and update the software, LocalExample.h WILL BE OVERWRITTEN!  
+
+Change #define LOCALFILE "LocalExample.h" to #define LOCALFILE  "Local.h" to #include "Local.h" in ArdunioConnectServer.h 
+----------
+Description of directories and files in the RasPiConnectServer package:
+
+ReadMe - This file
+LocalExample.h - The EXAMPLE local file for use.  See above or else your changes will be overwritten
+ArduinoConnectServer.ino - The main sketch for the progam
+Config.h - ArduinoConnectServer Configuration
+ExecuteJSONCommand.h - The supplied execute control routines
+MD5.cpp - Generates a MD5 has for authentication
+MD5.h - Generates a MD5 has for authentication
+MemoryFree.h - Displays free SRAM on Arduino
+WebServer.h - Webserver for Arduino
+smallJSON.h - lightweight JSON parser
+
